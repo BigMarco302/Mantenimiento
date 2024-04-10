@@ -1,0 +1,22 @@
+.button {
+  padding: 1rem 2rem;
+  border-radius: 5rem;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.button:hover {
+  filter: brightness(1.1);
+  transition: all 0.3s ease;
+}
+
+.button img {
+  width: 1rem;
+  height: 1rem;
+}
