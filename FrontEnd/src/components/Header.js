@@ -13,7 +13,6 @@ import userA from '../img/userAvatar.png'
 import menu from '../img/menu.png'
 import close from '../img/close.png';
 import { Navlink } from './Navlink';
-
 export const Header = ({ botones }) => {
 
   const {
