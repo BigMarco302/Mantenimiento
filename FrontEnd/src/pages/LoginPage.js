@@ -131,7 +131,7 @@ export const LoginPage = ({ rol }) => {
                         placeholder='Ingrese su usuario' value={form.correo} required />
                     </div>
                     <div className="input-form in-pass">
-                      <label htmlFor="pass" className="form-label center-label">Contraseña</label>
+                    <label htmlFor="pass" className="form-label center-label">Contraseña</label>
                       <input onChange={handleChange} type="password" className="form-control"
                         id="pass"
                         placeholder='Ingrese su contraseña' value={form.pass}
@@ -139,6 +139,11 @@ export const LoginPage = ({ rol }) => {
                         required
                       />
                     </div>
+                    <div className="button-container">
+  <button type="submit" className="btn-Submit">Entrar</button>
+  <button type="button" className="btn-Regresar" onClick={() => pages('/tipo-usuario')}>Regresar</button>
+</div>
+
                     <button type="submit" className="btn-Submit">Entrar</button>
                   </form>
 
