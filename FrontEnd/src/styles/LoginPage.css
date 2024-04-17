@@ -134,7 +134,7 @@
   font-size: 0.9em;
   padding-left: 1em;
   border-radius: 0.5em;
-  border: 1px solid rgba(125, 155, 245, 0.69);
+  border: 1px solid rgba(17, 27, 57, 0.69);
 }
 
 .input-form input:focus {
@@ -171,4 +171,7 @@
 
 .Dark .Regresar {
   color: ghostwhite;
+}
+.center-label {
+  text-align: center;
 }
