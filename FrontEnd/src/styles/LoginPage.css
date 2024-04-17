@@ -175,3 +175,16 @@
 .center-label {
   text-align: center;
 }
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px; /* Puedes ajustar este valor según tu diseño */
+}
+
+.btn-Submit {
+  /* Estilos del botón Entrar */
+}
+
+.btn-Regresar {
+  /* Estilos del botón Regresar */
+}
