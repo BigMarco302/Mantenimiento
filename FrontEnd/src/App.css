@@ -1,8 +1,8 @@
 :root {
   --main-gradient: -webkit-radial-gradient(
     top left,
-    rgba(125, 155, 245, 0.7),
-    rgba(255, 255, 255, 0.216)
+    #ffffff,
+    #ffffff
   );
   --main-gradient-r: -webkit-radial-gradient(
     top right,
