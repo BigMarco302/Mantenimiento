@@ -60,6 +60,7 @@ export const User = () => {
                         to={'/logout'}
                         className='Close userItem'
                         onClick={() => closeSesion()}
+                        style={{ backgroundColor: '#062E53' }}
                     >
                         {'Cerrar Sesion'}
                     </NavLink>
