@@ -1,7 +1,7 @@
 :root {
   --main-gradient: -webkit-radial-gradient(
     top left,
-    #ffffff,
+    #7912da,
     #ffffff
   );
   --main-gradient-r: -webkit-radial-gradient(
@@ -22,13 +22,13 @@
   padding: 0;
 }
 
-.Light {
+.Light { /*color del texto*/
   height: 100vh;
   background: var(--main-gradient);
   color: #282c34;
 }
 
-.Dark {
+.Dark {  /*color tema oscuro*/
   height: 100vh;
   background-color: #282c34;
   color: ghostwhite;

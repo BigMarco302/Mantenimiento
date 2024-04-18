@@ -9,11 +9,11 @@ header {
   height: 5em;
   width: 100%;
   padding: 0 2em;
-  background-color: #00000080;
+  background-color: #122e8a; /*color del header */
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   z-index: 50;
-  box-shadow: 0 0 20px 10px #00000080;
+  /*box-shadow: 0 0 20px 10px #00000080;*/
 }
 
 header a figure {
