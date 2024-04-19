@@ -24,7 +24,7 @@ export const TipoUsuarioPage = () => {
         <>
           <Header botones={false} />
 
-          <h1>Iniciar Sesion como...</h1>
+          <h1>Iniciar Sesión</h1>
           
           <section className="tipoUsuario">
 

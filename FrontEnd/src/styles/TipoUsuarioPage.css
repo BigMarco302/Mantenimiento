@@ -7,7 +7,7 @@ h1 {
   padding: 1rem 2rem;
   z-index: 10;
   position: absolute;
-  top: 20%; /* Centra verticalmente */
+  top: 17%; /* Centra verticalmente */
   left: 50%; /* Centra horizontalmente */
   transform: translate(-50%, -50%); /* Centra respecto al centro del elemento */
 }
@@ -29,3 +29,4 @@ section.tipoUsuario {
   justify-content: space-evenly;
   flex-direction: row;
 }
+
