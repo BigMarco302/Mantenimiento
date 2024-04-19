@@ -12,12 +12,29 @@ export const CardTipoUsuario = ({ tipo, icono }) => {
          style={{
             boxShadow: `0px 8px 20px 0 ${currentMode === 'Light' ? '#000000' : '#ffffff'}50`,
          }}>
+
+         <div className='backgroundImg'>
+
+         </div>
          <div className="imgIcon">
+
             <img src={icono} alt={tipo} />
+
          </div>
+
          <div className="txtTipo">
+
             <p>{tipo}</p>
+
          </div>
+
+         
+         <div>
+            <button className='iniciarSesión' >
+               Continuar
+            </button>
+         </div>
+         
       </div>
    )
 }
