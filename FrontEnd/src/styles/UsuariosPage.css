@@ -74,7 +74,7 @@
 }
 
 .form-crud .btns-form button:nth-child(1) {
-  border: 2px solid cornflowerblue;
+  border: 2px solid rgb(4, 20, 51);
   outline: none;
 
   color: white;
@@ -90,5 +90,5 @@
 }
 
 .section-usuarios h1 {
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 }

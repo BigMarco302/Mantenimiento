@@ -3,7 +3,7 @@
   /* width: calc(100% - 16em); */
   width: 100%;
   height: 100%;
-  padding: 10rem 2rem;
+  padding: 10rem 10rem; /*ancho de container*/
   transition: all 0.5s ease-in-out;
 }
 
@@ -43,7 +43,7 @@
   padding: 1rem 2rem;
   border-radius: 5rem;
   border: none;
-  background-color: cornflowerblue;
+  background-color: rgb(247, 247, 247);
   color: #282c34;
   font-size: 0.9rem;
 }
@@ -61,8 +61,8 @@
   padding: 1rem 0;
   border-radius: 1rem;
   font-size: 1rem;
-  background-color: #00000025;
-  box-shadow: 0 0 20px 10px #00000050;
+  background-color: #00000025; /*color del texto de temperatura ene l container */
+  /*box-shadow: 0 0 10px 10px #bad66d;  margen del body*/
   font-weight: 700;
   width: 100%;
   display: flex;
@@ -70,10 +70,10 @@
   justify-content: center;
   flex-direction: column;
   gap: 1rem;
-  margin: 2rem 0;
+  margin: 3rem 0;
 }
 
 .Sensor:hover {
-  box-shadow: 0 0 20px 10px #00000080;
+  box-shadow: 0 0 20px 10px #acdbee80; /*sombreado de los contenedores*/
   transition: all 0.2s ease-in-out;
 }
