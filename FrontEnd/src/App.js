@@ -23,7 +23,9 @@ function App() {
           <Route exact path='/usuarios' element={<UsuariosPage />} />
           <Route exact path='/reportes' element={<ReportesPage />} />
           <Route exact path='/logout' element={<Navigate to='/tipo-usuario' />} />
+          <Route exact path='/*' element={<Error404Page />} />
           <Route exact path='*' element={<Error404Page />} />
+          
         </Routes>
       </HashRouter>
     </div>
