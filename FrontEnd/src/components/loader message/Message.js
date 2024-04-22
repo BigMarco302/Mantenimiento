@@ -11,7 +11,9 @@ const Message = ({ msg, bgColor, active }) => {
     color: "#fff",
     fontWeight: "bold",
     borderRadius: '1rem',
+    zIndex: 1000,
     backgroundColor: bgColor,
+    
   };
 
 
@@ -26,6 +28,7 @@ const Message = ({ msg, bgColor, active }) => {
     fontWeight: "bold",
     borderRadius: '1rem',
     backgroundColor: bgColor,
+    zIndex: 1000,
   };
 
   return (
