@@ -23,9 +23,13 @@ export const TipoUsuarioPage = () => {
       {authUser === 'true' ? <Navigate to='/' /> : (
         <>
           <Header botones={false} />
-          <h1>Iniciar Sesion como...</h1>
+
+          <h1>Iniciar Sesión</h1>
+          
           <section className="tipoUsuario">
+
             <nav className='opciones'>
+
               <NavLink to='/login_Gerente'>
                 <CardTipoUsuario tipo='Gerente' icono={Gerente} />
               </NavLink>
@@ -39,6 +43,7 @@ export const TipoUsuarioPage = () => {
               </NavLink>
 
             </nav>
+
           </section>
         </>
       )}
