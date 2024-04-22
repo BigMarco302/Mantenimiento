@@ -139,12 +139,14 @@ export const LoginPage = ({ rol }) => {
                         required
                       />
                     </div>
-                    <div className="button-container">
-  <button type="submit" className="btn-Submit">Entrar</button>
-  <button type="button" className="btn-Regresar" onClick={() => pages('/tipo-usuario')}>Regresar</button>
-</div>
+                   
+                 
+                 <div className="button-container">
+                 <button type="submit" className="btn-Submit"> Entrar </button>
+                 <button type="button" className="btn-Regresar" onClick={() => pages('/tipo-usuario')}>Regresar</button>
+                 </div>
 
-                    <button type="submit" className="btn-Submit">Entrar</button>
+                   
                   </form>
 
                 </div>
