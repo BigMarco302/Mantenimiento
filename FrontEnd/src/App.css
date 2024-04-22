@@ -1,8 +1,8 @@
 :root {
   --main-gradient: -webkit-radial-gradient(
     top left,
-    #7912da,
-    #ffffff
+    #ffffff,
+    #fcfcfc
   );
   --main-gradient-r: -webkit-radial-gradient(
     top right,
