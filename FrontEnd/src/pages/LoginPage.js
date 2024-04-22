@@ -104,17 +104,13 @@ export const LoginPage = ({ rol }) => {
           {error && <Message msg={messageError} bgColor={'#DC4C64'} />}
           {loading && <Loader />}
           <Header botones={false} />
-          <NavLink
-            to={'/tipo-usuario'}
-            className='Regresar'
-          >
-            <h1 >&#8592;Regresar</h1>
-          </NavLink>
+    
+
           <div className='Login'>
             <div className="seccion">
-              <div className="card glass" style={{
-                boxShadow: `0px 8px 32px 0 ${currentMode === 'Light' ? '#000000' : '#ffffff'}50`,
-              }}>
+            <div className="card glass" style={{
+      boxShadow: `0px 8px 32px 0 ${currentMode === 'Light' ? '#062E53' : '#062E53'}50`,
+    }}> 
                 <div className="card-content">
                   <div className="imagen">
                     <img src={rol === 'Gerente' ? Gerente : (rol === 'Operador' ? Operador : Administrador)} alt='logoUser' />
@@ -130,7 +126,7 @@ export const LoginPage = ({ rol }) => {
                         id="correo" name="correo" aria-describedby="emailHelp"
                         placeholder='Ingrese su usuario' value={form.correo} required />
                     </div>
-                    <div className="input-form in-pass">
+                    <div className="input-form in-pass ">
                     <label htmlFor="pass" className="form-label center-label">Contraseña</label>
                       <input onChange={handleChange} type="password" className="form-control"
                         id="pass"
@@ -139,14 +135,12 @@ export const LoginPage = ({ rol }) => {
                         required
                       />
                     </div>
-                   
                  
-                 <div className="button-container">
-                 <button type="submit" className="btn-Submit"> Entrar </button>
-                 {/* <button type="button" className="btn-Regresar" onClick={() => pages('/tipo-usuario')}>Regresar</button> */}
-                 </div>
+                    <div className="button-container">
+                    <button type="submit" className="btn-Submit"> Entrar </button>
+                    <button type="button" className="btn-Regresar" onClick={() => pages('/tipo-usuario')}>Regresar</button>
+                    </div>
 
-                   
                   </form>
 
                 </div>
