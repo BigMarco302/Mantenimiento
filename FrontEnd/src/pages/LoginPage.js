@@ -146,7 +146,7 @@ export const LoginPage = ({ rol }) => {
                  <button type="button" className="btn-Regresar" onClick={() => pages('/tipo-usuario')}>Regresar</button>
                  </div>
 
-                    <button type="submit" className="btn-Submit">Entrar</button>
+                   
                   </form>
 
                 </div>
