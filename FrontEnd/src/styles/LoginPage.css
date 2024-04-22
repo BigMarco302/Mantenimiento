@@ -201,6 +201,7 @@
   box-shadow: 0 0 20px 1px rgba(25,36,70);
 }
 .btn-Regresar {
+  
   width: 100%; /* Ajusta el ancho de los botones según tu diseño */
   padding: 10px; /* Ajusta el relleno según sea necesario */
   flex: 1; /* Hace que los botones ocupen el mismo espacio */
