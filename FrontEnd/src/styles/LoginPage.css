@@ -4,10 +4,7 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(to right, #6d5b81 0%, #a1c2fa 100%);
+  min-height: 31.125em;
 }
 
 .Login .seccion {
@@ -20,8 +17,9 @@
 .Login .seccion .card .imagen {
   height: 8.75em;
   width: 8.75em;
+  border-radius: 50%;
   padding: 3px;
-
+  background: rgba(8, 19, 54, 0.69);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -43,7 +41,7 @@
   align-items: center;
   position: relative;
   width: 25em;
-  height: 34em;
+  height: 31.5em;
 }
 
 .Login .card .card-content {
@@ -125,21 +123,23 @@
 
 .Login .input-form label {
   width: 100% auto;
-
+  font-size: 1em;
+  font-weight: 400;
+  padding-bottom: 0.5em;
 }
 
 .Login .input-form input {
   width: 100% auto;
-  height: 3em;
-  font-size: 1.1em;
+  height: 2.5em;
+  font-size: 0.9em;
   padding-left: 1em;
-  border-radius: 3em;
-  border: 2px solid #b8c6db;
+  border-radius: 0.5em;
+  border: 1px solid rgba(19, 29, 57, 0.69);
 }
 
 .input-form input:focus {
   outline: none;
-
+  box-shadow: 0 0 1px 3px rgb(18, 27, 53);
 }
 
 .Login .login-form .btn-Submit {
@@ -152,15 +152,27 @@
   color: aliceblue;
   margin-top: 1em;
   border-radius: 5em;
-
-
+  background-color: rgb(103, 10, 10);
+  border: 1px solid rgb(25,36,70);
+  box-shadow: 0 0 20px 1px rgba(25,36,70);
 }
 
+.login-form .btn-Submit:hover {
+  background-color: rgb(76, 21, 21);
+  border: 1px solid rgb(19, 46, 87);
+  box-shadow: 0 0 20px 1px rgba(18, 43, 80, 0.8);
+}
 
+.Regresar {
+  color: #282c34;
+  padding: 1rem 2rem;
+  z-index: 10;
+  position: absolute;
+}
 
-
-
-
+.Dark .Regresar {
+  color: ghostwhite;
+}
 .center-label {
   text-align: center;
 }
@@ -170,34 +182,38 @@
 .button-container {
   display: flex;
   justify-content: space-between;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .btn-Submit {
-  background-color: #062E53; /* Color azul marino */
-  color: white; /* Texto en color blanco */
-  border: none; /* Sin bordes */
-  padding: 20px 37px; /* Espaciado interno para el botón */
-  text-align: center; /* Texto centrado */
-  text-decoration: none; /* Sin subrayado en el texto */
-  display: inline-block; /* Tipo de display */
-  font-size: 20px; /* Tamaño de la fuente */
-  margin: 4px 2px; /* Margen alrededor del botón */
-  cursor: pointer; /* Cursor en forma de puntero */
-  border-radius: 30px; /* Bordes redondeados para efecto ovalado */
-  margin: 20px;
-}
-.btn-Submit:hover {
-  background-color: #021322; /* Color azul marino */
+  width: 100px; /* Ajusta el ancho de los botones según tu diseño */
 
+  padding: 10px; /* Ajusta el relleno según sea necesario */
+  margin-right: 5px;
+  font-size: 1em;
+  font-weight: 500;
+  cursor: pointer;
+  color: aliceblue;
+  margin-top: 1em;
+  border-radius: 5em;
+  background-color: rgb(188, 12, 12);
+  border: 1px solid rgb(25,36,70);
+  box-shadow: 0 0 20px 1px rgba(25,36,70);
+}
+.btn-Regresar {
+  width: 100%; /* Ajusta el ancho de los botones según tu diseño */
+  padding: 10px; /* Ajusta el relleno según sea necesario */
+  flex: 1; /* Hace que los botones ocupen el mismo espacio */
+  margin: 0 5px; /* Ajusta el espacio entre los botones */
+  font-size: 1em;
+  font-weight: 500;
+  cursor: pointer;
+  color: aliceblue;
+  margin-top: 1em;
+  margin-left: 5px; /* Ajusta el margen izquierdo del botón "Regresar" */
+  border-radius: 5em;
+  background-color: rgb(25, 70, 35);
+  border: 1px solid rgb(25,36,70);
+  box-shadow: 0 0 20px 1px rgba(25,36,70);
 }
 
-h1{
-
-  margin: -20px;
-}
-.Login .warn-auth.is-active {
-  color: #DC4C64;
-  font-weight: 400;
-  font-size: 0.9em;
-}
