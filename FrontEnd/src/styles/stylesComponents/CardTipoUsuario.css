@@ -1,72 +1,81 @@
 .Dark .cardTipoUsuario {
-   color: ghostwhite;
+   color: #fff;
 }
 
 .cardTipoUsuario {
    width: 20em;
-   height: 20em;
-   background: var(--main-gradient);
-   backdrop-filter: blur(20px);
-   -webkit-backdrop-filter: blur(20px);
-   border-radius: 20px;
-   border: 2px solid rgba(255, 255, 255, 0.18);
+   height: 400px;
    display: flex;
-   justify-content: center;
+   justify-content: end;
    align-items: center;
    flex-direction: column;
-   gap: 2em;
+   background-color: #fff;
+   gap: 20px;
    cursor: pointer;
+   position: relative; /* Añadido para que los elementos absolutos se posicionen relativos a este contenedor */
+   border-radius: 20px;
 }
 
-.cardTipoUsuario:hover {
-   transform: translateY(-1em);
+.cardTipoUsuario::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 50%; /* La mitad superior será azul */
+   background-color: #062e53; /* Color azul deseado */
+   border-top-left-radius: 20px;
+   border-top-right-radius: 20px;
+}
+
+.cardTipoUsuario .backgroundImg {
+   width: 100%;
+   height: 50%; /* La mitad inferior será blanca */
+   background-color: #fff; /* Color blanco deseado */
+   border-bottom-left-radius: 20px;
+   border-bottom-right-radius: 20px;
 }
 
 .cardTipoUsuario .imgIcon {
-   width: 100% auto;
-   height: 100% auto;
-   border-radius: 100%;
-   background-color: ghostwhite;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-
-}
-
-.imgIcon img {
+   position: absolute;
+   top: calc(50% - 5em); /* Coloca el icono en el centro verticalmente */
+   left: calc(50% - 5em); /* Coloca el icono en el centro horizontalmente */
    width: 10em;
    height: 10em;
    border-radius: 100%;
-   border: 3px solid rgba(125, 155, 245, 0.7);
+   background-color: #fff;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   z-index: 1; /* Añadido para que el icono esté sobre el fondo */
+}
+
+.imgIcon img {
+   width: 80%;
+   height: 80%;
+   border-radius: 100%;
 }
 
 .cardTipoUsuario .txtTipo {
    width: 100%;
-   height: 100% auto;
-}
-
-.cardTipoUsuario .txtTipo p {
    text-align: center;
    font-size: 2em;
    font-weight: 600;
+   color: #000; /* Cambia el color del texto a negro */
+   position: relative; /* Añadido para que los elementos absolutos se posicionen relativos a este contenedor */
 }
 
-@media only screen and (max-width: 1000px) {
-   .cardTipoUsuario {
-      width: 18em;
-   }
-
-   .cardTipoUsuario .txtTipo p {
-      font-size: 1.5em;
-   }
-}
-
-@media only screen and (max-width: 900px) {
-   .cardTipoUsuario {
-      width: 13em;
-   }
-
-   .cardTipoUsuario .txtTipo p {
-      font-size: 1.5em;
-   }
+.iniciarSesión {
+   width: 150px;
+   height: 37px;
+   margin-top: 20px;
+   margin-bottom: 10px;
+   align-items: center; /* Alinea verticalmente el contenido al centro */
+   justify-content: center; /* Alinea horizontalmente el contenido al centro */
+   background-color: #424242;
+   border-color: #000;
+   cursor: pointer;
+   color: white;
+   display: flex;
+   border-radius: 5px;
 }
