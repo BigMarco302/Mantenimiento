@@ -81,7 +81,7 @@ export const UsuariosPage = () => {
               (messageError.includes('Error') ?
                 <Message msg={messageError} bgColor={'#DC4C64'} active={true} />
                 :
-                <Message msg={messageError} bgColor={'cornflowerblue'} active={true} />)
+                <Message msg={messageError} bgColor={'#122e8a'} active={true} />)
             }
             <div className='titleBtn'>
               <h1>
@@ -90,7 +90,7 @@ export const UsuariosPage = () => {
               <Button
                 text='Agregar un Usuario'
                 icon={homepage}
-                bgColor={'cornflowerblue'}
+                bgColor={'#122e8a'}
                 evento={handleAddUser} />
 
             </div>

@@ -245,7 +245,7 @@ export const ContextProvider = ({ children }) => {
           console.log(json);
       }),
       resError: (err => {
-        console.log("Huvo un Error al Eliminar el Dispositivo", err)
+        console.log("Error al Eliminar el Dispositivo", err)
       }),
 
     };
@@ -269,7 +269,7 @@ export const ContextProvider = ({ children }) => {
         getData();
       }),
       resError: (err => {
-        console.log("Huvo un Error al Eliminar el Usuario", err)
+        console.log("Error al Eliminar el Usuario", err)
       }),
 
     };
@@ -295,7 +295,7 @@ export const ContextProvider = ({ children }) => {
           getData();
 
           setWarn(true)
-          setMessageError('Nuevo Dispositivo Agregado')
+          setMessageError('Dispositivo Agregado Exitosamente')
           setTimeout(() => {
             setWarn(false);
           }, 3000);
@@ -423,7 +423,7 @@ export const ContextProvider = ({ children }) => {
         // console.log(json)
       }),
       resError: (err => {
-        console.log("Huvo un Error al Insertar los datos a la BD", err)
+        console.log("Error al Insertar los datos a la BD", err)
       }),
 
     };

@@ -26,7 +26,7 @@ const initialForm = {
 }
 
 export const DispositivosPage = () => {
-  useTitle('Dispositivos IoT');
+  useTitle('Dispositivos Conectados IoT');
 
 
   const [active, setActive] = useState(false);
@@ -53,7 +53,7 @@ export const DispositivosPage = () => {
   }
 
   const handleDelete = (id) => {
-    window.confirm(`¿Seguro que deseas eliminar el dispositivo ${id} ?`) &&
+    window.confirm(`¿Desea eliminar el dispositivo ${id} ?`) &&
       deleteDevice({ id });
   }
 
@@ -68,16 +68,16 @@ export const DispositivosPage = () => {
               (messageError.includes('Error') ?
                 <Message msg={messageError} bgColor={'#DC4C64'} active={true} />
                 :
-                <Message msg={messageError} bgColor={'cornflowerblue'} active={true} />)
+                <Message msg={messageError} bgColor={'#122e8a'} active={true} />)
             }
             <div className='titleBtn'>
               <h1>
-                Dispositivos IoT
+                Dispositivos Conectados IoT
               </h1>
               <Button
                 text='Agregar Dispositivo'
                 icon={homepage}
-                bgColor={'cornflowerblue'}
+                bgColor={'#122e8a'}
                 evento={handleAddUser}
               />
             </div>
