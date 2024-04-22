@@ -7,7 +7,27 @@
 }
 .page{
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+}
+.page2{
+    display: flex;
+    justify-content: center;  /* Centra horizontalmente */
+    align-items: center;      /* Centra verticalmente */
+    
+}
+.boton{
+    background-color: #062E53; /* Color azul marino */
+    color: white; /* Texto en color blanco */
+    border: none; /* Sin bordes */
+    padding: 20px 37px; /* Espaciado interno para el botón */
+    text-align: center; /* Texto centrado */
+    text-decoration: none; /* Sin subrayado en el texto */
+    display: inline-block; /* Tipo de display */
+    font-size: 20px; /* Tamaño de la fuente */
+    margin: 4px 2px; /* Margen alrededor del botón */
+    cursor: pointer; /* Cursor en forma de puntero */
+    border-radius: 30px; /* Bordes redondeados para efecto ovalado */
 }
