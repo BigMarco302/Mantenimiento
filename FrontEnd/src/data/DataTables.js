@@ -20,7 +20,7 @@ export const dataTables = [
       ],
    },
    {
-      titleTable: 'Tabla de dispositivos IoT',
+      titleTable: 'Tabla de dispositivos Conectados IoT',
       titleTableHead: [
          {
             name: 'ID',
@@ -39,6 +39,23 @@ export const dataTables = [
 
          {
             name: 'Dato de medida',
+         },
+      ],
+   },
+   {
+      titleTable: 'Tabla de Reportes',
+      titleTableHead: [
+         {
+            name: 'ID',
+         },
+         {
+            name: 'Nombre',
+         },
+         {
+            name: 'Reporte',
+         },
+         {
+            name: 'Fecha',
          },
       ],
    },

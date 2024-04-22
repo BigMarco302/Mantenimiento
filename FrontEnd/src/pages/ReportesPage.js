@@ -7,6 +7,10 @@ import { Navigate } from 'react-router-dom';
 import CardDispositivosIoT from '../components/CardDispositivosIoT';
 import { useEffect, useState } from 'react';
 import fetchAJAX from '../helpers/fetch';
+import { Table } from '../components/Table';
+
+import homepage from '../img/boton-mas.png';
+import { Button } from '../components/Button';
 
 
 export const ReportesPage = () => {
@@ -81,17 +85,22 @@ export const ReportesPage = () => {
           {/* <Sidebar /> */}
           <Header />
           <section className='homepage'>
-            <h1>
-              Reportes
-            </h1>
+            <div className='titleBtn'>
+              <h1>
+                Reportes Generados
+              </h1>
+              <Button
+                text='Agregar Reporte'
+                icon={homepage}
+                bgColor={'#122e8a'}
+              />
             {dataIoT &&
               <div className="container-devices">
                 {dataIoT.result.map(el => {
                   return (
                     <CardDispositivosIoT
                       key={el.id_dispositivo_iot}
-                      nombrIoT={el.nombre}
-                      handleChange={handleChange}
+                      nombrIoT={el.nombre}            
                       value={dataBusqueda}
                       dataIoTDB={dataIoTDB}
                       setDataIoTDB={setDataIoTDB}
@@ -99,9 +108,15 @@ export const ReportesPage = () => {
                     />)
                 })}
               </div>
+              
             }
-
-
+            </div>
+            <section className='section-dispositivos'>
+              <Table
+                title='reportes'
+              />
+            </section>
+              
 
           </section>
         </>
