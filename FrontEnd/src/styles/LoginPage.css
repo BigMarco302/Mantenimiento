@@ -43,7 +43,7 @@
   align-items: center;
   position: relative;
   width: 25em;
-  height: 31.5em;
+  height: 34em;
 }
 
 .Login .card .card-content {
@@ -131,10 +131,10 @@
 .Login .input-form input {
   width: 100% auto;
   height: 3em;
-  font-size: 0.9em;
+  font-size: 1.1em;
   padding-left: 1em;
   border-radius: 3em;
-  border: 1px solid rgba(19, 29, 57, 0.69);
+  border: 2px solid #b8c6db;
 }
 
 .input-form input:focus {
@@ -160,9 +160,7 @@
 
 
 
-.Dark .Regresar {
-  color: ghostwhite;
-}
+
 .center-label {
   text-align: center;
 }
@@ -189,5 +187,17 @@
   border-radius: 30px; /* Bordes redondeados para efecto ovalado */
   margin: 20px;
 }
+.btn-Submit:hover {
+  background-color: #021322; /* Color azul marino */
 
+}
 
+h1{
+
+  margin: -20px;
+}
+.Login .warn-auth.is-active {
+  color: #DC4C64;
+  font-weight: 400;
+  font-size: 0.9em;
+}

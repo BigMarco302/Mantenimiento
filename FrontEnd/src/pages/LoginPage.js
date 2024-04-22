@@ -108,7 +108,7 @@ export const LoginPage = ({ rol }) => {
             to={'/tipo-usuario'}
             className='Regresar'
           >
-            <h1>&#8592;Regresar</h1>
+            <h1 >&#8592;Regresar</h1>
           </NavLink>
           <div className='Login'>
             <div className="seccion">
