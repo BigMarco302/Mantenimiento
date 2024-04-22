@@ -19,7 +19,7 @@
   width: 8.75em;
   border-radius: 50%;
   padding: 3px;
-  background: rgba(125, 155, 245, 0.69);
+  background: rgba(8, 19, 54, 0.69);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -134,32 +134,33 @@
   font-size: 0.9em;
   padding-left: 1em;
   border-radius: 0.5em;
-  border: 1px solid rgba(17, 27, 57, 0.69);
+  border: 1px solid rgba(19, 29, 57, 0.69);
 }
 
 .input-form input:focus {
   outline: none;
-  box-shadow: 0 0 1px 3px rgba(125, 155, 245);
+  box-shadow: 0 0 1px 3px rgb(18, 27, 53);
 }
 
 .Login .login-form .btn-Submit {
   width: 100%;
-  height: 2.375em;
+  height: 100;
+  flex: 1;
   font-size: 1em;
   font-weight: 500;
   cursor: pointer;
   color: aliceblue;
   margin-top: 1em;
   border-radius: 5em;
-  background-color: rgb(125, 155, 245);
-  border: 1px solid rgb(125, 155, 245);
-  box-shadow: 0 0 20px 1px rgba(125, 155, 245, 0.8);
+  background-color: rgb(103, 10, 10);
+  border: 1px solid rgb(25,36,70);
+  box-shadow: 0 0 20px 1px rgba(25,36,70);
 }
 
 .login-form .btn-Submit:hover {
-  background-color: rgb(63, 126, 221);
-  border: 1px solid rgb(63, 126, 221);
-  box-shadow: 0 0 20px 1px rgba(63, 126, 221, 0.8);
+  background-color: rgb(76, 21, 21);
+  border: 1px solid rgb(19, 46, 87);
+  box-shadow: 0 0 20px 1px rgba(18, 43, 80, 0.8);
 }
 
 .Regresar {
@@ -175,16 +176,44 @@
 .center-label {
   text-align: center;
 }
+.center-placeholder::placeholder {
+  text-align: center;
+}
 .button-container {
   display: flex;
   justify-content: space-between;
-  margin-top: 20px; /* Puedes ajustar este valor según tu diseño */
+  margin-top: 20px;
 }
 
 .btn-Submit {
-  /* Estilos del botón Entrar */
+  width: 100px; /* Ajusta el ancho de los botones según tu diseño */
+
+  padding: 10px; /* Ajusta el relleno según sea necesario */
+  margin-right: 5px;
+  font-size: 1em;
+  font-weight: 500;
+  cursor: pointer;
+  color: aliceblue;
+  margin-top: 1em;
+  border-radius: 5em;
+  background-color: rgb(188, 12, 12);
+  border: 1px solid rgb(25,36,70);
+  box-shadow: 0 0 20px 1px rgba(25,36,70);
+}
+.btn-Regresar {
+  width: 100%; /* Ajusta el ancho de los botones según tu diseño */
+  padding: 10px; /* Ajusta el relleno según sea necesario */
+  flex: 1; /* Hace que los botones ocupen el mismo espacio */
+  margin: 0 5px; /* Ajusta el espacio entre los botones */
+  font-size: 1em;
+  font-weight: 500;
+  cursor: pointer;
+  color: aliceblue;
+  margin-top: 1em;
+  margin-left: 5px; /* Ajusta el margen izquierdo del botón "Regresar" */
+  border-radius: 5em;
+  background-color: rgb(25, 70, 35);
+  border: 1px solid rgb(25,36,70);
+  box-shadow: 0 0 20px 1px rgba(25,36,70);
 }
 
-.btn-Regresar {
-  /* Estilos del botón Regresar */
-}
